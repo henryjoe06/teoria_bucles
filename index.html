@@ -15,24 +15,35 @@
       }
       .numeros {
         width: 10px;
-        border: 5px solid rgb(252, 15, 15);
+        border: 5px solid rgb(0, 0, 0);
         height: 100px;
         width: 100px;
-        background-color: aqua;
+        background-color: rgb(255, 255, 255);
         margin: 10px;
         margin-top: 10px;
       }
-      .pantalla{
+      .pantalla {
         width: 350px;
         height: 100px;
         border: 10px solid rgb(255, 255, 255);
         background-color: rgb(0, 0, 0);
       }
+      .centrar-calculadora {
+        display: flex;
+        justify-content: center;
+      }
+      .centrar-titulo{
+        display: flex;
+        justify-content: center;
+      }
     </style>
   </head>
   <body>
-    <h1>Bucles (Calculadora)</h1>
-    <div class="calculadora">
+    <div class="centrar-titulo">
+      <h1>Bucles (Calculadora)</h1>
+    </div>
+    <div class="centrar-calculadora">
+      <div class="calculadora">
         <div class="pantalla"></div>
         <button class="numeros">1</button>
         <button class="numeros">2</button>
@@ -46,14 +57,15 @@
         <button class="numeros">+/-</button>
         <button class="numeros">0</button>
         <button class="numeros">=</button>
-    </div>
-    <div id="numero">
-      <div id="1">1</div>
-      <div id="2">2</div>
-      <div id="3">3</div>
-      <div id="4">4</div>
-      <div id="5">5</div>
-      <div id="6">6</div>
+      </div>
+      <div id="numero">
+        <div id="1">1</div>
+        <div id="2">2</div>
+        <div id="3">3</div>
+        <div id="4">4</div>
+        <div id="5">5</div>
+        <div id="6">6</div>
+      </div>
     </div>
     <script>
       let divsNumeros = <div id="1">1</div>
